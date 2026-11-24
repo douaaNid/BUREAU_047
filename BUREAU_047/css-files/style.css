@@ -1,0 +1,255 @@
+/* Style général des pages */
+body {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.9rem;
+    background-color: #020706;
+    color: #D7E0DB;
+}
+
+/* Couleur des liens et changement quand on passe dessus */
+a {
+    color: #00C978;
+}
+
+a:hover {
+    color: #7AFFC1;
+}
+
+.text-vert {
+    color: #00C978;
+}
+
+.text-gris {
+    color: #89958F;
+}
+
+/* Barre de navigation */
+.navbar {
+    background-color: #070A09;
+    z-index: 10;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-brand:hover {
+    color: green;
+}
+
+.navbar .nav-link {
+    color: #D7E0DB;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #00C978;
+}
+
+.navbar-toggler-icon {
+    filter: invert(48%) sepia(79%) saturate(2500%) hue-rotate(100deg) brightness(95%) contrast(90%);
+}
+
+/* Sur téléphone, le menu s'affiche sous la barre */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        padding: 0 1rem;
+        background-color: rgba(7, 10, 9, 0.88);
+    }
+}
+
+/* Boutons verts */
+.btn-vert {
+    color: #00C978;
+    border: 1px solid #00C978;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.btn-vert:hover,
+.btn-vert:active {
+    color: #020706;
+    background-color: #00C978;
+    border-color: #00C978;
+}
+
+.btn-vert:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 201, 120, 0.25);
+}
+
+/* Style des cartes d'enquête */
+.carte {
+    background-color: rgba(7, 10, 9, 0.7);
+    color: #D7E0DB;
+    border-color: #29352F;
+    border-radius: 6px;
+    transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.carte-enquete {
+    border-color: #008F5A;
+}
+
+.carte-hover:hover {
+    border-color: #00C978;
+    box-shadow: 0 0 15px rgba(0, 201, 120, 0.18);
+}
+
+/* Les cartes remontent un peu au survol */
+.carte-enquete:hover {
+    transform: translateY(-3px);
+}
+
+/* L'image remplit la carte sans être déformée */
+.carte-img {
+    height: 145px;
+    object-fit: cover;
+    filter: brightness(0.55) saturate(0.85);
+}
+
+/* Champs de formulaire */
+.form-control {
+    background-color: #030807;
+    color: #D7E0DB;
+    border: 1px solid #3A4841;
+    border-radius: 3px;
+}
+
+.form-control:focus {
+    background-color: #030807;
+    color: #D7E0DB;
+    border-color: #00C978;
+    box-shadow: 0 0 7px rgba(0, 201, 120, 0.15);
+}
+
+.form-control::placeholder {
+    color: #56625C;
+}
+
+/* Largeur du formulaire de contact */
+.formulaire {
+    max-width: 460px;
+}
+
+/* Fond de la page d'accueil */
+.hero {
+    position: relative;
+    isolation: isolate;
+}
+
+/* Image floutée placée derrière le contenu */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+        radial-gradient(ellipse at top left, rgba(0, 0, 0, 0.85), transparent 60%),
+        radial-gradient(ellipse at top right, rgba(0, 0, 0, 0.85), transparent 60%),
+        radial-gradient(ellipse at bottom left, rgba(0, 0, 0, 0.85), transparent 60%),
+        radial-gradient(ellipse at bottom right, rgba(0, 0, 0, 0.85), transparent 60%),
+        url(../images/jatinder-nagra-jlDuocWEp6E-unsplash.jpg);
+    background-size: cover;
+    background-position: 60% 40%;
+    filter: blur(4px) brightness(0.6);
+    clip-path: inset(0);
+}
+
+/* Mise en page de la page À propos */
+.about {
+    background-color: #050807;
+    border-left: 1px solid #252b28;
+    border-right: 1px solid #252b28;
+}
+
+.about p {
+    max-width: 520px;
+}
+
+.about-img {
+    max-width: 520px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.65), 0 0 24px rgba(0, 201, 120, 0.18);
+}
+
+/* Icônes de la page « Comment ça marche » */
+.icone-etape {
+    font-size: 3rem;
+    filter: drop-shadow(0 0 4px rgba(0, 201, 120, 0.5));
+}
+
+/* Flèche entre les étapes sur grand écran */
+.etape:not(:last-child) .card::after {
+    content: "\2192";
+    position: absolute;
+    right: -1.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    color: #00C978;
+    font-size: 1.1rem;
+}
+
+/* Sur petit écran, la flèche pointe vers le bas */
+@media (max-width: 767.98px) {
+    .etape:not(:last-child) .card::after {
+        content: "\2193";
+        right: 50%;
+        top: auto;
+        bottom: -1.5rem;
+        transform: translateX(50%);
+    }
+}
+
+/* Image en haut d'une page d'affaire */
+.affaire-img {
+    width: 100%;
+    height: clamp(190px, 40vw, 300px);
+    object-fit: cover;
+    border-color: #008F5A !important;
+    filter: brightness(0.6) saturate(0.85);
+}
+
+/* Trait vert à côté du texte de l'affaire */
+.case-panel {
+    border-left: 2px solid #00C978;
+}
+
+/* Bas de page */
+.footer {
+    background-color: #070A09;
+    border: 1px solid #252b28;
+}
+
+.footer li a {
+    color: #D7E0DB;
+    text-decoration: none;
+}
+
+.footer li a:hover {
+    color: #00C978;
+}
+
+.footer-bottom {
+    border-top: 1px solid #252b28;
+    color: #858d89;
+}
+
+.newsletter {
+    max-width: 235px;
+}
+
+/* Petits boutons des réseaux sociaux */
+.icone-rond {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #00C978;
+    color: #00C978;
+    text-decoration: none;
+}
+
+.icone-rond:hover {
+    background-color: #00C978;
+    color: #070A09;
+}

@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BUREAU_047 - Affaire #03</title>
+    <!-- Bootstrap + icônes + police -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Mon CSS (après Bootstrap pour pouvoir le modifier) -->
+    <link href="../../css-files/style.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg p-3 border border-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html">BUREAU_047</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-lg-auto pt-3 pt-lg-0">
+            <li class="nav-item">
+              <a href="../../index.html" class="nav-link">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="../about.html" class="nav-link">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a href="../enquete.html" class="nav-link active">Enquête</a>
+            </li>
+            <li class="nav-item">
+              <a href="../process.html" class="nav-link">Comment ça marche</a>
+            </li>
+            <li class="nav-item">
+              <a href="../contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN : affaire #03 -->
+    <main class="container flex-grow-1 py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8">
+          <header class="text-center mb-4">
+            <p class="text-vert mb-2">&gt; AFFAIRE #03</p>
+            <h1 class="h3">LA DISPARUE DU BÂTIMENT C</h1>
+            <p class="small text-gris">CAMPUS UNIVERSITAIRE</p>
+          </header>
+
+          <img
+            src="../../images/park.jpg"
+            alt="La disparue du bâtiment c"
+            class="affaire-img rounded border mb-5"
+          />
+
+          <!-- Historique -->
+          <section class="mb-4">
+            <h2 class="h6 text-vert mb-3">&gt; HISTORIQUE</h2>
+            <div class="card carte case-panel">
+              <div class="card-body lh-lg">
+                <p class="card-text">
+                  Vendredi 20 novembre 2026, à 6h10, un agent d'entretien trouve
+                  Léa Martin, 21 ans, étudiante en pharmacie, inconsciente dans
+                  le local à vélos du bâtiment C, sur le campus. Elle est
+                  sédatée et en hypothermie légère, et n'a aucun souvenir de sa
+                  soirée. Son sac à dos et son ordinateur ont disparu. Le même
+                  matin, à 9h, elle devait déposer un signalement auprès du
+                  comité d'éthique de l'université au sujet de données
+                  scientifiques douteuses. Un message envoyé depuis son
+                  téléphone à son ex-petit ami laisse penser qu'elle serait
+                  allée dormir chez lui. Quatre personnes gravitent autour
+                  d'elle :
+                </p>
+                <p class="card-text">
+                  sa colocataire Inès, son ex Théo, son directeur de laboratoire
+                  le professeur Collet, et Mehdi, un doctorant.
+                </p>
+                <p class="card-text">
+                  À vous de démasquer qui a voulu faire taire Léa avant qu'elle
+                  ne parle.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Dossier PDF -->
+          <section class="mb-4">
+            <h2 class="h6 text-vert mb-3">&gt; DOSSIER DE L'ENQUÊTE</h2>
+            <div class="card carte">
+              <div
+                class="card-body d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3"
+              >
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-file-earmark-pdf fs-1 text-vert"></i>
+                  <div>
+                    <h3 class="h6 mb-1">DOSSIER #03</h3>
+                    <p class="small text-gris mb-0">
+                      Informations et indices de l'enquête
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="../../pdf-files/Affaire_03_La_disparue_du_batiment_C.pdf"
+                  class="btn btn-vert"
+                  download
+                  >TÉLÉCHARGER LE PDF <i class="bi bi-download ms-2"></i
+                ></a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Réponse -->
+          <section class="mb-4">
+            <h2 class="h6 text-vert mb-3">&gt; IDENTIFIER LE RESPONSABLE</h2>
+            <div class="card carte">
+              <div class="card-body">
+                <p class="small">
+                  Analysez les informations du dossier puis indiquez le nom de
+                  la personne que vous pensez responsable.
+                </p>
+                <form>
+                  <label for="suspect" class="form-label text-vert small"
+                    >NOM DU RESPONSABLE</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control mb-3"
+                    id="suspect"
+                    name="suspect"
+                    placeholder="ENTRER UN NOM"
+                    autocomplete="off"
+                  />
+                  <button type="submit" class="btn btn-vert">
+                    SUBMIT &gt;
+                  </button>
+                </form>
+                <!-- Plus tard (avec JavaScript) : message de résultat
+                <div class="alert alert-success mt-3">IDENTITÉ CORRECTE</div>
+                <div class="alert alert-danger mt-3">RÉPONSE INCORRECTE</div>
+                -->
+              </div>
+            </div>
+          </section>
+
+          <a
+            href="../enquete.html"
+            class="d-block text-center text-decoration-none small mt-5"
+            >&larr; RETOUR AUX ENQUÊTES</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer mt-5 mx-2 mx-md-3 mb-3 rounded-4">
+      <div class="container-fluid px-4 pt-4">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <h2 class="h6 text-vert">BUREAU_047</h2>
+            <p class="small mb-0">
+              Des enquêtes. Des indices.<br />Une vérité cachée.
+            </p>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <h2 class="h6 text-vert">LIENS RAPIDES</h2>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="../../index.html">Accueil</a></li>
+              <li class="mb-2"><a href="../about.html">À propos</a></li>
+              <li class="mb-2"><a href="../enquete.html">Enquêtes</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <h2 class="h6 text-vert">RESSOURCES</h2>
+            <ul class="list-unstyled small">
+              <li class="mb-2">
+                <a href="../process.html">Comment ça marche</a>
+              </li>
+              <li class="mb-2"><a href="../contact.html">Contact</a></li>
+              <li class="mb-2">
+                <a
+                  href="mailto:bureau_047@gmail.com?subject=Mentions%20l%C3%A9gales"
+                  >Mentions légales</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2 mb-4">
+            <h2 class="h6 text-vert">SUIVEZ-NOUS</h2>
+            <div class="d-flex gap-3">
+              <a
+                class="icone-rond d-flex justify-content-center align-items-center rounded-circle"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                class="icone-rond d-flex justify-content-center align-items-center rounded-circle"
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                class="icone-rond d-flex justify-content-center align-items-center rounded-circle"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                class="icone-rond d-flex justify-content-center align-items-center rounded-circle"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <h2 class="h6 text-vert">NEWSLETTER</h2>
+            <p class="small">Recevez les nouvelles enquêtes.</p>
+            <div class="input-group input-group-sm newsletter">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Votre email"
+                aria-label="Votre email"
+              />
+              <button
+                type="button"
+                class="btn btn-vert"
+                aria-label="S'inscrire"
+              >
+                &gt;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center small py-2">
+        © 2026 BUREAU_047 - Tous droits réservés.
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BUREAU_047 - Enquêtes</title>
+    <!-- Bootstrap + icônes + police -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Mon CSS (après Bootstrap pour pouvoir le modifier) -->
+    <link href="../css-files/style.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg p-3 border border-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">BUREAU_047</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-lg-auto pt-3 pt-lg-0">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a href="enquete.html" class="nav-link active">Enquête</a>
+            </li>
+            <li class="nav-item">
+              <a href="process.html" class="nav-link">Comment ça marche</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN : liste des enquêtes -->
+    <main class="container flex-grow-1 py-5">
+      <header class="text-center mb-4">
+        <h1 class="h5 text-vert">&gt; NOS ENQUÊTES</h1>
+        <p class="small">Choisissez votre prochaine enquête.</p>
+      </header>
+
+      <!-- grille Bootstrap : 1 colonne (mobile), 2 (tablette), 3 (ordinateur) -->
+      <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+        <article class="col">
+          <div class="card carte carte-enquete carte-hover h-100">
+            <img
+              src="../images/images (1).jpg"
+              class="card-img-top carte-img"
+              alt="Le thé de 22 heures"
+            />
+            <div class="card-body d-flex flex-column">
+              <h2 class="h6 text-vert">AFFAIRE #01</h2>
+              <h3 class="h6 small">Le thé de 22 heures</h3>
+              <p class="small text-gris">Manoir Valmont</p>
+              <a
+                href="enquetes-html/enquetes_01.html"
+                class="btn btn-vert d-flex justify-content-between mt-auto"
+                >EXPLORER <span>&gt;</span></a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card carte carte-enquete carte-hover h-100">
+            <img
+              src="../images/haute-joaillerie-durable-maisons-couture-scaled.webp"
+              class="card-img-top carte-img"
+              alt="La nuit du diamant"
+            />
+            <div class="card-body d-flex flex-column">
+              <h2 class="h6 text-vert">AFFAIRE #02</h2>
+              <h3 class="h6 small">La nuit du diamant</h3>
+              <p class="small text-gris">Bijouterie Aurélia</p>
+              <a
+                href="enquetes-html/enquetes_02.html"
+                class="btn btn-vert d-flex justify-content-between mt-auto"
+                >EXPLORER <span>&gt;</span></a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card carte carte-enquete carte-hover h-100">
+            <img
+              src="../images/park.jpg"
+              class="card-img-top carte-img"
+              alt="La disparue du bâtiment C"
+            />
+            <div class="card-body d-flex flex-column">
+              <h2 class="h6 text-vert">AFFAIRE #03</h2>
+              <h3 class="h6 small">La disparue du bâtiment C</h3>
+              <p class="small text-gris">Campus universitaire</p>
+              <a
+                href="enquetes-html/enquetes_03.html"
+                class="btn btn-vert d-flex justify-content-between mt-auto"
+                >EXPLORER <span>&gt;</span></a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card carte carte-enquete carte-hover h-100">
+            <img
+              src="../images/restorant.avif"
+              class="card-img-top carte-img"
+              alt="Dernier service au Figuier"
+            />
+            <div class="card-body d-flex flex-column">
+              <h2 class="h6 text-vert">AFFAIRE #04</h2>
+              <h3 class="h6 small">Dernier service au Figuier</h3>
+              <p class="small text-gris">Mort d'une critique gastronomique</p>
+              <a
+                href="enquetes-html/enquetes_04.html"
+                class="btn btn-vert d-flex justify-content-between mt-auto"
+                >EXPLORER <span>&gt;</span></a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card carte carte-enquete carte-hover h-100">
+            <img
+              src="../images/niege.jpg"
+              class="card-img-top carte-img"
+              alt="La corde"
+            />
+            <div class="card-body d-flex flex-column">
+              <h2 class="h6 text-vert">AFFAIRE #05</h2>
+              <h3 class="h6 small">La corde</h3>
+              <p class="small text-gris">Accident mortel en haute montagne</p>
+              <a
+                href="enquetes-html/enquetes_05.html"
+                class="btn btn-vert d-flex justify-content-between mt-auto"
+                >EXPLORER <span>&gt;</span></a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card carte carte-enquete carte-hover h-100">
+            <img
+              src="../images/hopitale.jpg"
+              class="card-img-top carte-img"
+              alt="Nuit blanche en orthopédie"
+            />
+            <div class="card-body d-flex flex-column">
+              <h2 class="h6 text-vert">AFFAIRE #06</h2>
+              <h3 class="h6 small">Nuit blanche en orthopédie</h3>
+              <p class="small text-gris">
+                Mort suspecte d'un patient à l'hôpital
+              </p>
+              <a
+                href="enquetes-html/enquetes_06.html"
+                class="btn btn-vert d-flex justify-content-between mt-auto"
+                >EXPLORER <span>&gt;</span></a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card carte carte-enquete carte-hover h-100">
+            <img
+              src="../images/images.jpg"
+              class="card-img-top carte-img"
+              alt="Dossiers numériques de la clinique Saint-Aubin"
+            />
+            <div class="card-body d-flex flex-column">
+              <h2 class="h6 text-vert">AFFAIRE #10</h2>
+              <h3 class="h6 small">Le tunnel fantôme</h3>
+              <p class="small text-gris">Fuite de données à la clinique Saint-Aubin</p>
+              <a
+                href="enquetes-html/enquetes_10.html"
+                class="btn btn-vert d-flex justify-content-between mt-auto"
+                >EXPLORER <span>&gt;</span></a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card carte carte-enquete carte-hover h-100">
+            <img
+              src="../images/enquette11.jpg"
+              class="card-img-top carte-img"
+              alt="L'archive fantôme"
+            />
+            <div class="card-body d-flex flex-column">
+              <h2 class="h6 text-vert">AFFAIRE #11</h2>
+              <h3 class="h6 small">L'archive fantôme</h3>
+              <p class="small text-gris">Vol d'un dossier confidentiel</p>
+              <a
+                href="enquetes-html/enquetes_11.html"
+                class="btn btn-vert d-flex justify-content-between mt-auto"
+                >EXPLORER <span>&gt;</span></a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card carte carte-enquete carte-hover h-100">
+            <img
+              src="../images/enquette12.jpg"
+              class="card-img-top carte-img"
+              alt="Le testament de Cassel"
+            />
+            <div class="card-body d-flex flex-column">
+              <h2 class="h6 text-vert">AFFAIRE #12</h2>
+              <h3 class="h6 small">Le testament de Cassel</h3>
+              <p class="small text-gris">Mort suspecte d'un cryptologue</p>
+              <a
+                href="enquetes-html/enquetes_12.html"
+                class="btn btn-vert d-flex justify-content-between mt-auto"
+                >EXPLORER <span>&gt;</span></a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer mt-5 mx-2 mx-md-3 mb-3 rounded-4">
+      <div class="container-fluid px-4 pt-4">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <h2 class="h6 text-vert">BUREAU_047</h2>
+            <p class="small mb-0">
+              Des enquêtes. Des indices.<br />Une vérité cachée.
+            </p>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <h2 class="h6 text-vert">LIENS RAPIDES</h2>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="../index.html">Accueil</a></li>
+              <li class="mb-2"><a href="about.html">À propos</a></li>
+              <li class="mb-2"><a href="enquete.html">Enquêtes</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <h2 class="h6 text-vert">RESSOURCES</h2>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="process.html">Comment ça marche</a></li>
+              <li class="mb-2"><a href="contact.html">Contact</a></li>
+              <li class="mb-2">
+                <a
+                  href="mailto:bureau_047@gmail.com?subject=Mentions%20l%C3%A9gales"
+                  >Mentions légales</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2 mb-4">
+            <h2 class="h6 text-vert">SUIVEZ-NOUS</h2>
+            <div class="d-flex gap-3">
+              <a
+                class="icone-rond d-flex justify-content-center align-items-center rounded-circle"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                class="icone-rond d-flex justify-content-center align-items-center rounded-circle"
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                class="icone-rond d-flex justify-content-center align-items-center rounded-circle"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                class="icone-rond d-flex justify-content-center align-items-center rounded-circle"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <h2 class="h6 text-vert">NEWSLETTER</h2>
+            <p class="small">Recevez les nouvelles enquêtes.</p>
+            <div class="input-group input-group-sm newsletter">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Votre email"
+                aria-label="Votre email"
+              />
+              <button
+                type="button"
+                class="btn btn-vert"
+                aria-label="S'inscrire"
+              >
+                &gt;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center small py-2">
+        © 2026 BUREAU_047 - Tous droits réservés.
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>

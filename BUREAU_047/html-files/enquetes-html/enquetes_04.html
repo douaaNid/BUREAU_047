@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BUREAU_047 - Affaire #04</title>
+    <!-- Bootstrap + icônes + police -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Mon CSS (après Bootstrap pour pouvoir le modifier) -->
+    <link href="../../css-files/style.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg p-3 border border-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html">BUREAU_047</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-lg-auto pt-3 pt-lg-0">
+            <li class="nav-item">
+              <a href="../../index.html" class="nav-link">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="../about.html" class="nav-link">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a href="../enquete.html" class="nav-link active">Enquête</a>
+            </li>
+            <li class="nav-item">
+              <a href="../process.html" class="nav-link">Comment ça marche</a>
+            </li>
+            <li class="nav-item">
+              <a href="../contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN : affaire #04 -->
+    <main class="container flex-grow-1 py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8">
+          <header class="text-center mb-4">
+            <p class="text-vert mb-2">&gt; AFFAIRE #04</p>
+            <h1 class="h3">DERNIER SERVICE AU FIGUIER</h1>
+            <p class="small text-gris">MORT D'UNE CRITIQUE GASTRONOMIQUE</p>
+          </header>
+
+          <img
+            src="../../images/restorant.avif"
+            alt="Dernier service au figuier"
+            class="affaire-img rounded border mb-5"
+          />
+
+          <!-- Historique -->
+          <section class="mb-4">
+            <h2 class="h6 text-vert mb-3">&gt; HISTORIQUE</h2>
+            <div class="card carte case-panel">
+              <div class="card-body lh-lg">
+                <p class="card-text">
+                  Vendredi 4 décembre 2026, Élise Marchand, 46 ans, critique
+                  gastronomique redoutée, dîne au restaurant Le Figuier, table
+                  7. Elle est très allergique à l'arachide, et le restaurant le
+                  sait. À 21h35, elle se sent mal, et Olivier, son convive,
+                  utilise son auto-injecteur d'adrénaline, sans effet. Elle
+                  meurt à 21h52. Quatre personnes avaient un lien avec elle ce
+                  soir-là :
+                </p>
+                <p class="card-text">
+                  le chef Antoine, dont l'étoile dépendait de sa critique, le
+                  sous-chef Julien, la serveuse Camille, et Olivier, son rival
+                  qui lui devait de l'argent.
+                </p>
+                <p class="card-text">
+                  À vous de trouver qui a transformé un dîner de critique en
+                  dernier repas.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Dossier PDF -->
+          <section class="mb-4">
+            <h2 class="h6 text-vert mb-3">&gt; DOSSIER DE L'ENQUÊTE</h2>
+            <div class="card carte">
+              <div
+                class="card-body d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3"
+              >
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-file-earmark-pdf fs-1 text-vert"></i>
+                  <div>
+                    <h3 class="h6 mb-1">DOSSIER #04</h3>
+                    <p class="small text-gris mb-0">
+                      Informations et indices de l'enquête
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="../../pdf-files/Affaire_04_Dernier_service_au_Figuier.pdf"
+                  class="btn btn-vert"
+                  download
+                  >TÉLÉCHARGER LE PDF <i class="bi bi-download ms-2"></i
+                ></a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Réponse -->
+          <section class="mb-4">
+            <h2 class="h6 text-vert mb-3">&gt; IDENTIFIER LE RESPONSABLE</h2>
+            <div class="card carte">
+              <div class="card-body">
+                <p class="small">
+                  Après avoir analysé les informations disponibles, indiquez le
+                  nom de la personne que vous pensez responsable.
+                </p>
+                <form>
+                  <label for="suspect" class="form-label text-vert small"
+                    >NOM DU RESPONSABLE</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control mb-3"
+                    id="suspect"
+                    name="suspect"
+                    placeholder="ENTRER UN NOM"
+                    autocomplete="off"
+                  />
+                  <button type="submit" class="btn btn-vert">
+                    SUBMIT &gt;
+                  </button>
+                </form>
+                <!-- Plus tard (avec JavaScript) : message de résultat
+                <div class="alert alert-success mt-3">IDENTITÉ CORRECTE</div>
+                <div class="alert alert-danger mt-3">RÉPONSE INCORRECTE</div>
+                -->
+              </div>
+            </div>
+          </section>
+
+          <a
+            href="../enquete.html"
+            class="d-block text-center text-decoration-none small mt-5"
+            >&larr; RETOUR AUX ENQUÊTES</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer mt-5 mx-2 mx-md-3 mb-3 rounded-4">
+      <div class="container-fluid px-4 pt-4">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <h2 class="h6 text-vert">BUREAU_047</h2>
+            <p class="small mb-0">
+              Des enquêtes. Des indices.<br />Une vérité cachée.
+            </p>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <h2 class="h6 text-vert">LIENS RAPIDES</h2>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="../../index.html">Accueil</a></li>
+              <li class="mb-2"><a href="../about.html">À propos</a></li>
+              <li class="mb-2"><a href="../enquete.html">Enquêtes</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 mb-4">
+            <h2 class="h6 text-vert">RESSOURCES</h2>
+            <ul class="list-unstyled small">
+              <li class="mb-2">
+                <a href="../process.html">Comment ça marche</a>
+              </li>
+              <li class="mb-2"><a href="../contact.html">Contact</a></li>
+              <li class="mb-2">
+                <a
+                  href="mailto:bureau_047@gmail.com?subject=Mentions%20l%C3%A9gales"
+                  >Mentions légales</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2 mb-4">
+            <h2 class="h6 text-vert">SUIVEZ-NOUS</h2>
+            <div class="d-flex gap-3">
+              <a
+                class="icone-rond d-flex justify-content-center align-items-center rounded-circle"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                class="icone-rond d-flex justify-content-center align-items-center rounded-circle"
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                class="icone-rond d-flex justify-content-center align-items-center rounded-circle"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                class="icone-rond d-flex justify-content-center align-items-center rounded-circle"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <h2 class="h6 text-vert">NEWSLETTER</h2>
+            <p class="small">Recevez les nouvelles enquêtes.</p>
+            <div class="input-group input-group-sm newsletter">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Votre email"
+                aria-label="Votre email"
+              />
+              <button
+                type="button"
+                class="btn btn-vert"
+                aria-label="S'inscrire"
+              >
+                &gt;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center small py-2">
+        © 2026 BUREAU_047 - Tous droits réservés.
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
