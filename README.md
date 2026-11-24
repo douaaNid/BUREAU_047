@@ -123,6 +123,5 @@ La feuille [style.css](BUREAU_047/css-files/style.css) personnalise :
 - [Page de contact](BUREAU_047/html-files/contact.html)
 - [Feuille de styles](BUREAU_047/css-files/style.css)
 - [Script de vérification](BUREAU_047/js-files/enquetes.js)
-- [Rapport PDF du TP](README.pdf)
 
 
